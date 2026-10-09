@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="description" content="Jawaharlal Nehru Technological University - Gurajada Vizianagaram" />
+  <link rel="apple-touch-icon" href="/logo192.png" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <title>JNTU-GV</title>
+
+  <link rel="preconnect" href="https://api.jntugv.edu.in" crossorigin />
+  <link rel="preconnect" href="https://img.youtube.com" crossorigin />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-KTBBC4TX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "GT-KTBBC4TX");
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background: #ffffff;
+      color: #111827;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-Bui6It2v.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Dpp-5V0v.css">
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
+</html>

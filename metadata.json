@@ -1,0 +1,7 @@
+{
+  "name": "University Guest House Portal",
+  "description": "A comprehensive digital solution for university guest house registration, admin approvals, and reporting, featuring multi-step forms, role-based access, and professional print/export capabilities.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

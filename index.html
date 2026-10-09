@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JNTU-GV | Guest House Management Portal</title>
+  <link rel="icon" type="image/png" href="https://jntugv.edu.in/images/jntugv.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            jntu: {
+              primary: '#1E5CA8',
+              navy: '#2563EB',
+              darknavy: '#183B6B',
+              cobalt: '#3B82F6',
+              blue: '#60A5FA',
+              accent: '#2563EB',
+              surface: '#F8FAFC',
+              border: '#E2E8F0',
+              muted: '#64748B',
+              text: '#1E293B',
+            }
+          },
+          fontFamily: {
+            sans: ['"Times New Roman"', 'Times', 'serif'],
+            serif: ['"Times New Roman"', 'Times', 'serif'],
+          },
+          animation: {
+            fadeIn: 'fadeIn 0.3s ease-in-out',
+            marquee: 'marquee 30s linear infinite',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(8px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            marquee: {
+              '0%': { transform: 'translateX(100%)' },
+              '100%': { transform: 'translateX(-100%)' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    :root {
+      --bg-main: #f8fafc;
+      --text-primary: #1e293b;
+      --text-secondary: #64748b;
+      --jntu-primary: #1e5ca8;
+      --jntu-navy: #1b5299;
+      --jntu-accent: #2563EB;
+      --font-family: 'Times New Roman', Times, serif;
+      color-scheme: light;
+    }
+
+    *, html, body, h1, h2, h3, h4, h5, h6, p, span, button, input, select, textarea, div, a, label, table, th, td {
+      font-family: 'Times New Roman', Times, serif !important;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif !important;
+      -webkit-font-smoothing: antialiased;
+      background-color: var(--bg-main) !important;
+      color: var(--text-primary) !important;
+    }
+    
+    input, textarea, select {
+      background-color: var(--input-bg);
+      color: var(--input-text);
+      border: 1px solid var(--input-border);
+      transition: all 0.2s ease-in-out;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+      outline: none;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #94a3b8;
+      border-radius: 20px;
+    }
+
+    /* Professional Watermark for Voucher */
+    .voucher-watermark {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      font-size: 8rem;
+      font-weight: 900;
+      color: rgba(0, 0, 0, 0.03);
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+    }
+
+    @media print {
+      @page {
+        margin: 0;
+        size: A4;
+      }
+      
+      .no-print, header, footer, aside {
+        display: none !important;
+      }
+
+      body {
+        background-color: white !important;
+      }
+
+      #printable-voucher {
+        display: block !important;
+        position: relative !important;
+        width: 210mm !important;
+        min-height: 297mm !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        background: white !important;
+        color: black !important;
+      }
+
+      .voucher-watermark {
+        display: block !important;
+      }
+
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+    }
+  </style>
+
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="transition-colors duration-200 min-h-screen">
+  <div id="root"></div>
+<script type="module" src="/index.jsx"></script>
+</body>
+</html>

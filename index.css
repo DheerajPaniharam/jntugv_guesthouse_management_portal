@@ -1,0 +1,104 @@
+/* JNTU-GV Official Institutional Design System */
+:root {
+  --jntu-primary: #1E5CA8;
+  --jntu-navy: #2563EB;
+  --jntu-darknavy: #183B6B;
+  --jntu-blue: #3B82F6;
+  --jntu-accent: #2563EB;
+  --jntu-surface: #F8FAFC;
+  --jntu-border: #E2E8F0;
+  --font-serif: 'Times New Roman', Times, serif;
+  --font-sans: 'Times New Roman', Times, serif;
+  color-scheme: light;
+}
+
+*, html, body, input, select, textarea, button, p, span, div, a, label, table, th, td {
+  font-family: 'Times New Roman', Times, serif !important;
+}
+
+html {
+  font-family: 'Times New Roman', Times, serif !important;
+  scroll-behavior: smooth;
+  background-color: #F8FAFC;
+  color: #1E293B;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F8FAFC !important;
+  color: #1E293B !important;
+  font-family: 'Times New Roman', Times, serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif, .font-sans {
+  font-family: 'Times New Roman', Times, serif !important;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Hide scrollbars where necessary */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+/* Print Optimization */
+@media print {
+  .no-print, header, footer, aside, nav {
+    display: none !important;
+  }
+  
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  
+  #printable-voucher {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
